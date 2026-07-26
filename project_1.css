@@ -1,1 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+body, html{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.active{
+    color: crimson;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* Navbar */
+.navbar{
+    display: flex;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.nav_links{
+    display: flex;
+    align-items: center;   
+}
+
+.nav_links li{
+    margin: 0 30px;
+}
+
+header{
+    width: 100vw ;
+    height: 100vh;
+    background-image: url(img1.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header_content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header_content h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: crimson;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header_content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom:30px;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: crimson;
+    color: whitesmoke;
+    border-radius: 30px;
+}
+
+/*Events*/
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(99, 107, 191);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events .row{
+    margin-top: 50px;
+}
+
+h4{
+    margin: 20px auto;
+    font-size: 3vmin;
+    color: rgb(99, 107, 191);;
+}
+
+p{
+    color: rgb(153, 140, 140);
+    padding: 0px 40px;
+    margin-left: 20px;
+}
+
+.events .ctn{
+    margin-top: 30px;
+}
+
+.row .col img{
+    width: 30vw;
+    height: 25vw;
+}
+/* Mobile view */
+
+@media(max-width:750px){
+    .nav_links{
+        flex-direction: column;
+        
+        
+    }
+    .nav_links li{
+        margin: 5px;
+    }
+   
+}
